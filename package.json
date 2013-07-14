@@ -1,0 +1,23 @@
+{
+  "name": "ack-types",
+  "version": "0.0.0",
+  "description": "ack type lookup",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test/test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/jarofghosts/ack-types.git"
+  },
+  "keywords": [
+    "ack",
+    "type",
+    "lookup"
+  ],
+  "author": "jesse keane",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jarofghosts/ack-types/issues"
+  }
+}
