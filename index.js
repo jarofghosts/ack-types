@@ -152,7 +152,7 @@ var path = require('path'),
 
 
 function lookup(filename) {
-  if (!filename) return '';
+  if (!filename) return undefined;
   return types[path.extname(filename).substring(1)];
 }
 
