@@ -1,6 +1,8 @@
 ack-type
 ====
 
+[![Build Status](https://travis-ci.org/jarofghosts/ack-types.png?branch=master)](https://travis-ci.org/jarofghosts/ack-types)
+
 lookup ack type by filename
 
 ## usage
