@@ -170,5 +170,21 @@ function compare(filename, type) {
   return false;
 }
 
+function reverseLookup(type) {
+  if (!type) return undefined;
+  var i = 0,
+      k = Object.keys(types),
+      l = k.length,
+      results = [];
+
+  for (; i < l; ++i) {
+    var name = k[i];
+    if (types[name] == type && results.indexOf(name) == -1) results.push(name);
+  }
+
+  return results;
+}
+
+module.exports.reverseLookup = reverseLookup;
 module.exports.lookup = lookup;
 module.exports.compare = compare;
