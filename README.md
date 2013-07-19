@@ -12,6 +12,7 @@ var acktype = require('ack-type');
 
 acktype.compare(filename, type); // true or false
 acktype.lookup(filename); // type or array of types
+acktype.reverseLookup(type); // array of extensions associated with type
 ```
 
 ## license
