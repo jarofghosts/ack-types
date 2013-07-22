@@ -185,6 +185,11 @@ function reverseLookup(type) {
   return results;
 }
 
+function allExtensions() {
+  return Object.keys(types);
+}
+
 module.exports.reverseLookup = reverseLookup;
 module.exports.lookup = lookup;
 module.exports.compare = compare;
+module.exports.allExtensions = allExtensions;
