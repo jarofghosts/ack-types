@@ -4,7 +4,7 @@
   "description": "ack type lookup",
   "main": "index.js",
   "scripts": {
-    "test": "node test/test.js"
+    "test": "node test/index.js"
   },
   "repository": {
     "type": "git",
@@ -19,5 +19,8 @@
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/jarofghosts/ack-types/issues"
+  },
+  "devDependencies": {
+    "tape": "^2.13.1"
   }
 }
