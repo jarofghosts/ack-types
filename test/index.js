@@ -18,17 +18,13 @@ test('lookup filename for type', function(t) {
 })
 
 test('reverseLookup grabs extensions', function(t) {
-  t.plan(6)
+  t.plan(2)
 
   var mdTest = ack.reverseLookup('markdown')
 
-  t.equal(mdTest[0], 'md');
-  t.equal(mdTest[1], 'markdown')
-  t.equal(mdTest[2], 'mkd')
-  t.equal(mdTest.length, 3)
+  t.deepEqual(mdTest, ['md', 'markdown', 'mdown', 'mkd'])
 
   var pyTest = ack.reverseLookup('python')
 
-  t.equal(pyTest[0], 'py')
-  t.equal(pyTest.length, 1)
+  t.deepEqual(pyTest, ['py'])
 })
