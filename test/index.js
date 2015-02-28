@@ -21,10 +21,14 @@ test('reverseLookup grabs extensions', function(t) {
   t.plan(2)
 
   var mdTest = ack.reverseLookup('markdown')
-
-  t.deepEqual(mdTest, ['md', 'markdown', 'mdown', 'mkd'])
-
   var pyTest = ack.reverseLookup('python')
 
+  t.deepEqual(mdTest, ['md', 'markdown', 'mdown', 'mkd'])
   t.deepEqual(pyTest, ['py'])
+})
+
+test('types holds all of the types', function(t) {
+  t.plan(1)
+
+  t.deepEqual(ack.types, require('../lib/types.json'))
 })
